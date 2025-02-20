@@ -1,0 +1,106 @@
+.rides-container {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 20px; 
+  justify-content: flex-start; 
+  margin-top: 80px;
+  margin-left: 20px;
+}
+
+.user-ride-box {
+  flex: 1 1 calc(33.33% - 40px); /* 3 items per row */
+  max-width: 400px; 
+  background-color: #ffffff; 
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  border: 1px solid #0D92F4;
+  text-align: center;
+}
+
+/* layout is responsive */
+@media (max-width: 900px) {
+  .user-ride-box {
+      flex: 1 1 calc(50% - 40px); /* 2 per row on medium screens */
+  }
+}
+
+@media (max-width: 600px) {
+  .user-ride-box {
+      flex: 1 1 100%; /* 1 per row on small screens */
+  }
+}
+
+  #space{
+    margin-right: 28px;
+}
+#space-small{
+    margin-right: 10px;
+}
+  /* Title for the ride box */
+  .user-ride-box h2 {
+    font-size: 18px;
+    color: #343a40; 
+    margin-bottom: 10px;
+  }
+  
+  /* Styling for paragraphs within the box */
+  .user-ride-box p {
+    font-size: 14px;
+    color: #495057; 
+    margin: 5px 0; 
+    margin-left: 10px;
+  }
+  
+  /* Add a hover effect to the box for interactivity */
+  .user-ride-box:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s, box-shadow 0.3s; 
+    border: 1px solid #0D92F4;
+  }
+
+  .book-btn{
+    background-color: #0D92F4;
+    color: whitesmoke;
+    border-radius: 5px;
+    border: none;
+    width: 120px; 
+    height: 30px;
+    cursor: pointer;
+    margin: 8px;
+    
+    font-family: 'Poppins', sans-serif;
+}
+.cancel-btn{
+    background-color: #0D92F4;
+    color: whitesmoke;
+    border-radius: 5px;
+    border: none;
+    width: 120px; 
+    height: 30px;
+    cursor: pointer;
+    margin: 8px;
+    
+    font-family: 'Poppins', sans-serif;
+}
+.userbooked{
+  display: flex;
+  flex-direction: row;
+
+}
+
+.userbooked-info{
+  margin-bottom: 12px;
+  margin-right: 16px;
+}
+
+.icon{
+  font-size: 24px;
+  color: #6bbdf8;
+}
+
+hr {
+  border: 1px solid #ccc;
+  margin: 20px 0;
+}

@@ -1,0 +1,39 @@
+.bookeduser{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 10px; 
+}
+.bg {
+    background-image: url('../../assets/Images/profilebg.jpg') !important;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+    width: 100%;  
+    padding: 20px;
+    position: relative;
+    border-radius: 15px;
+    margin-top: 60px;
+}
+.user-info-bookeduser{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 360px;
+    width: 50%;
+    margin: 10px auto;
+    border-radius: 5px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+.extra-info-bookeduser{
+    display: flex;
+    flex-direction: column;
+    width: 50%;  
+    background-color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);     
+}

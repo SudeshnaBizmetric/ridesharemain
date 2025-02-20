@@ -1,0 +1,179 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+.form-content{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
+.box{
+   
+    font-weight: 200; 
+   
+    margin: 20px;
+    color: grey;
+   
+}
+
+.passenger-box{
+    display: flex;
+    align-items: center; 
+    
+  }
+  
+  .icon-passenger {
+    margin-right: 8px; 
+    font-size: 18px; 
+    margin-left: 4px;
+    border: none;
+  }
+  
+  .label {
+    margin-right: 18px; 
+    
+    margin-top: 8px;
+    margin-left: 10px;
+  }
+  .seats{
+    margin-top: 14px;
+    font-size: 1.4rem;
+  }
+  .input {
+    width: 20%; 
+    padding: 8px;
+  }
+  .passenger-input{
+    width: 100%;
+    border: 1px solid black;
+    margin: 8px;
+    padding: 8px;
+  }
+.destination-input{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid black;
+    margin: 8px;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+.pickup-input{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid black;
+    margin: 8px;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.date-input{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid black;
+    margin: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-btn{
+    background-color: #007bff;
+    color: whitesmoke;
+    border-radius: 5px;
+    border: none;
+    width: 120px; 
+    height: 40px;
+    cursor: pointer;
+    margin: 8px;
+
+}
+.book-btn{
+    background-color: #007bff;;
+    color: whitesmoke;
+    border-radius: 5px;
+    border: none;
+    width: 180px; 
+    height: 30px;
+    cursor: pointer;
+    margin: 8px;
+   
+}
+.search-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+
+}
+.booking-btn{
+    background-color: #0D92F4;
+    color: whitesmoke;
+    border-radius: 5px;
+    border: none;
+    width: 160px; 
+    height: 40px;
+    cursor: pointer;
+    
+}
+.rides{
+  font-weight: 200; 
+  margin: 20px;
+  
+}
+.ride-box {
+  background-color: #ffffff; 
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(63, 164, 232, 0.1); 
+  margin-bottom: 4px;
+  width: 100%;
+  max-width: 350px; 
+  border: 1px solid #007bff; 
+  margin-top: 60px;
+  margin-left: 20px;
+}
+
+/* Title for the ride box */
+.ride-box h2 {
+  font-size: 18px;
+  color: #343a40; 
+  margin-bottom: 10px;
+}
+
+/* Styling for paragraphs within the box */
+.ride-box p {
+  font-size: 14px;
+  color: #495057; 
+  margin: 5px 0; 
+  margin-left: 10px;
+}
+
+/* Add a hover effect to the box for interactivity */
+.ride-box:hover {
+  transform: translateY(-5px); 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+  transition: transform 0.3s, box-shadow 0.3s; 
+  border: 1px solid #007bff;
+}
+
+.noride{
+  font-size: 1.5rem;
+  font-weight: 200;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+.search-ride{
+  margin-bottom: 600px;
+}
+
+.zeroseats-rides:disabled{
+  background-color: #0D92F4;
+  color: whitesmoke;
+  border-radius: 5px;
+  border: none;
+  width: 160px; 
+  height: 40px;
+  cursor: pointer;
+  margin: 8px;
+  font-family: 'Poppins', sans-serif;
+}

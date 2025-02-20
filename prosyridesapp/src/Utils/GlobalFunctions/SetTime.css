@@ -1,0 +1,57 @@
+/* Main container to center everything */
+.container {
+  display: flex;
+  flex-direction: row; 
+  align-items: center; 
+  justify-content: center; 
+ 
+  gap: 20px; 
+}
+
+/* Button styling */
+.time {
+  font-size: 16px;
+  width: 60px;
+  height: 35px;
+  padding: 4px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  background-color: white;
+  transition: background-color 0.3s ease;
+}
+
+.time.selected {
+  background-color: #0D92F4;
+  color: black;
+}
+
+.time:focus {
+  outline: none;
+}
+
+/* Dropdown styling */
+select {
+  display: block;
+  width: 90px;
+  height: 35px;
+  overflow-y: auto;
+  margin-bottom: 1rem;
+  font-size: 16px;
+  text-align: center;
+}
+
+select:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+
+option {
+  padding: 10px;
+}
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}

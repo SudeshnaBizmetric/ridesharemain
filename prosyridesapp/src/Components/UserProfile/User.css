@@ -1,0 +1,299 @@
+body {
+    overflow-x: hidden; /* Hides any horizontal overflow */
+}
+
+.user{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+    width: 100%;
+    margin-left: 460px; 
+    margin-top: 30px;   
+}
+
+.extra-info{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+        
+}
+.user-extra-info{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+          
+}
+
+.verticledivdation {
+    position: relative; /* This makes it a reference point for absolute positioning */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.topimage {
+    background-image: url('../../assets/Images/usertopimage.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 240px;
+    position: relative;
+}
+
+.user-profile {
+    position: absolute; /* Overlap effect */
+    top: 180px;          /* Adjust this to move it up or down */
+    left: 30px;          /* Aligns it horizontally */
+    z-index: 10;         /* Ensures it stays above the background */
+    background-color: white;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    border: 1px solid rgb(225, 220, 220);
+}
+
+
+
+.profile-pic-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.profile-pic {
+    height: 180px;
+    width: 190px;
+    border-radius: 50%;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    background-image: url('../../assets/Images/profilebg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+    object-fit: cover;
+}
+
+/* Name in One Line */
+.name-container {
+    margin-top: 10px;
+}
+
+.name {
+    font-size: 32px;
+    color: rgb(52, 50, 50);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Contact Info (Email & Phone in One Line) */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.email, .phone {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.icon {
+    font-size: 22px;
+    color: #555;
+}
+
+
+.button{
+    background-color: #0D92F4;
+    color: whitesmoke;
+    border-radius: 5px;
+    border: none;
+    width: 180px; 
+    height: 30px;
+    cursor: pointer;
+    margin: 8px;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 600px;
+}
+
+
+.text{
+    font-size: 16px;
+
+}
+
+.info-text{
+    height: 60px;
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.title-text{
+    font-size: 20px;
+    color: gray; 
+    margin-left: 18px;
+    margin-top: 6px;
+}
+.title-icons{
+    font-size: 24px;
+    color: #0D92F4; 
+    margin-left: 18px;
+    
+}
+.property{
+    font-size: 18px;
+    margin-left: 10px; 
+    margin-top: 7px;
+    margin-right: 4px; 
+    font-family: 'Poppins', sans-serif; 
+}
+.option-inputs{
+    width: 50%;
+    height: 30px;
+    border-radius: 5px;
+}
+.bookeduserup{
+    background-color: white;
+    height: 60px;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    border-radius: 5px;
+    border: 1px solid rgb(225, 220, 220);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
+}
+
+.bookeduserdown{
+    background-color: white;
+    height: 240px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 1px solid rgb(225, 220, 220);
+    margin-top: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
+}
+.up{
+    background-color: white;
+    height: 200px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+}
+
+.down{
+    border-radius: 5px;
+    background-color: white;
+    height: 400px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 10px; 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+}
+
+.deleteaccountbutton{
+    background-color: #0D92F4;
+    color: whitesmoke;
+    border-radius: 5px;
+    border: none;
+    width: 140px; 
+    height: 30px;
+    cursor: pointer;
+    margin: 8px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20px;
+    
+}
+
+.extra-info-user {
+    display: flex;
+    flex-direction: column;
+    width: 100%;  
+    max-width: 600px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);     
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.about,
+.vehicle {
+    width: 100%;
+    height: 50px;
+    text-align: left;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.preferences {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.preferences label {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 5px;
+}
+
+.preferences select {
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    padding: 5px;
+}
+
+.button {
+    background-color: #0D92F4;
+    color: whitesmoke;
+    border-radius: 5px;
+    border: none;
+    width: 140px; 
+    height: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20px;
+    align-self: center;
+}
+
+.button:hover {
+    background-color: #0b7cca;
+}

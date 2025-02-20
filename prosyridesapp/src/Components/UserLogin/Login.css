@@ -1,0 +1,82 @@
+.logo {
+    height: 60px;
+    background-color: aliceblue;
+  }
+  
+  .Navbar {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    height: 60px;
+    justify-items: start;
+    position:fixed;
+  }
+  
+  .btn {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    padding-left: 20px;
+    color: #0D92F4 ;
+  }
+  
+  .space {
+    padding-left: 130px;
+  }
+  
+.main{
+  
+    background-size: cover;
+    padding-top: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    position:relative; 
+ }
+ .img{
+    
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     height: 90vh;
+     width: 100%;
+ }
+
+ .form{
+    /* background-color: rgb(3, 52, 110); */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 50%;
+    border-radius: 5px;
+    
+}
+.logininputs {
+    padding: 2px;
+    margin: 4px;
+    width: 70%; 
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
+    font-size: 1rem;
+    border: none;
+    background-color:white;
+    border: 1px solid black ;
+    
+}
+
+.loginbutton{
+    padding: 2px;
+    margin: 4px;
+    width: 20%; 
+    background-color:#0D92F4 ;
+    color: whitesmoke;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    border: none;
+    
+}

@@ -1,0 +1,173 @@
+body {
+  margin-top: 60px; 
+  font-family: 'Poppins', sans-serif;
+}
+
+.logo {
+    height: 60px;
+    background-color: aliceblue;
+  }
+  
+  .Navbar {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    height: 40px;
+    justify-items: start;
+    position: fixed;
+    width: 100%;
+    top: 0; 
+    z-index: 1000; 
+  }
+  
+  
+  .btn {
+    
+    font-weight: 400;
+    padding-left: 20px;
+    color: #7465bd;
+  }
+  
+  .space {
+    padding-left: 130px;
+  }
+  
+  .Search-Box {
+    position: relative; 
+    display: inline-block;
+    padding-top: 15px;
+    padding-left: 220px;
+  }
+  
+  .Search {
+    border-radius: 10px;
+    border: 1px solid #7465bd;
+    width: 500px;
+    height: 40px;
+    padding-left: 40px; 
+    font-size: large;
+   
+    font-weight: 400;
+  }
+  
+  .search-icon {
+    position: absolute;
+    left: 230px; 
+    top: 60%; 
+    transform: translateY(-50%); 
+    font-size: 20px;
+    color: #7465bd;
+  }
+  
+  .linkbtn {
+    padding-top: 18px;
+    
+    font-weight: 400;
+    border: none;
+    color: #7465bd;
+    padding-left: 20px;
+  }
+  
+  /* .boxes{
+    background-image: url('../Images/Main_bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+  }
+   */
+   .Bg {
+    background-image: url('https://cdn.blablacar.com/kairos/assets/images/carpool_only_large-1fb250954893109fa160.svg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+    width: 100%;
+    height: 250px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    border-radius: 10px;
+    
+    margin-top: 60px;
+}
+
+.boxes{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 200px;
+}
+
+.box{
+    
+    font-weight: 200; 
+    margin: 20px;
+    color: #0D92F4;  
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
+}
+.box:hover{
+ 
+    transform: translateY(-5px); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s, box-shadow 0.3s; 
+   
+  
+}
+.title{
+    font-weight: 400;
+    font-size: 22px;
+    color: black;
+}
+.content-text{
+    font-size: 18px;
+    color: black;
+    padding: 10px;
+}
+
+.mostlyaskedquestions {
+  margin-top: 140px;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.questions-text {
+  font-size: 24px;
+  
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.accordion-item {
+  display: inline-block;
+  width: 48%; /* Two items per row */
+  margin: 1% 2%; /* Adjust the horizontal margin for spacing between items */
+  
+}
+
+.accordion-header button {
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  color: #007bff;
+  
+  text-align: left;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.accordion-header button:hover {
+  background-color: #f1f1f1;
+  color: #0056b3;
+}
+
+.accordion-body {
+  font-size: 16px;
+  padding: 10px;
+  background-color: #f9f9f9;
+}

@@ -1,0 +1,29 @@
+.date-picker-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .label-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .calendar-icon {
+    font-size: 18px;  /* Adjust the size of the calendar icon */
+    color: #0D92F4;   /* Customize the icon color */
+  }
+  
+  .date-picker-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .date-input {
+    padding-left: 10px;  /* Add padding to the left to prevent icon overlap */
+    padding-right: 30px; /* Adjust padding for proper alignment */
+    font-size: 16px;     /* Adjust the font size of the input */
+  }
+  
