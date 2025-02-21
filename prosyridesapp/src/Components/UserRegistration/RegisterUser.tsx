@@ -3,6 +3,9 @@ import Navbar from '../../Utils/HOC/Navbar';
 import { useState } from 'react';
 import axios from 'axios';
 
+// Base URL for API (use environment variable if needed)
+const API_BASE_URL = "https://prosybackend-a7cvbaadetbccte9.canadacentral-01.azurewebsites.net";
+
 const RegisterUser = () => {
   const [Name, setName] = useState<string>("")
   const [E_mail, setEmail] = useState<string>("")
@@ -31,10 +34,10 @@ const RegisterUser = () => {
     }
 
     try {
-      const response = await axios.post("http://127.0.0.1:8000/v1/users", {
+      const response = await axios.post(`${API_BASE_URL}/v1/users`, {
         Name,
         E_mail,
-        Phone_number:(Phone_number), // Convert to number before sending
+        Phone_number,
         password,
       });
 
@@ -47,7 +50,7 @@ const RegisterUser = () => {
 
   return (
     <>
-     <Navbar />
+      <Navbar />
       <div className="main">
         <form className="form" onSubmit={HandleUser}>
           <input
@@ -66,18 +69,17 @@ const RegisterUser = () => {
           />
           {errors.E_mail && <p className="error-message">{errors.E_mail}</p>}
           <input
-  className="Register-inputs"
-  placeholder="Phone Number"
-  value={Phone_number}
-  required
-  onChange={(e) => {
-    const value = e.target.value;
-    if (/^\d*$/.test(value)) { 
-      setPhone(value);
-    }
-  }}
-/>
-
+            className="Register-inputs"
+            placeholder="Phone Number"
+            value={Phone_number}
+            required
+            onChange={(e) => {
+              const value = e.target.value;
+              if (/^\d*$/.test(value)) { 
+                setPhone(value);
+              }
+            }}
+          />
           <input
             className="Register-inputs"
             placeholder="Password"
