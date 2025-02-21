@@ -49,7 +49,7 @@ const User = () => {
     if (!id) return;
 
     try {
-      const response = await axios.get(`http://localhost:8000/v1/users/${id}`);
+      const response = await axios.get(`https://backendapiapp-hhgecegpgefhd4bc.canadacentral-01.azurewebsites.net/v1/users/${id}`);
       setUser(response.data);
      
     } catch (error) {
