@@ -34,7 +34,7 @@ const RegisterUser = () => {
     }
 
     try {
-      const response = await axios.post(`${API_BASE_URL}/v1/users`, {
+      const response = await axios.post("https://prosybackend-a7cvbaadetbccte9.canadacentral-01.azurewebsites.net/v1/users", {
         Name,
         E_mail,
         Phone_number,
