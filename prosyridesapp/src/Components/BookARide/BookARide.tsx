@@ -356,9 +356,7 @@ const BookARide = () => {
         </form>
 
         {error && <p style={{ color: "red" }}>{error}</p>}
-        {remainingseats<1 ?(
-            null
-        ):(
+       
           <div className="rides">
           {rides.length > 0 ? (
             rides.map((ride, index) => (
@@ -405,8 +403,7 @@ const BookARide = () => {
           
          
         </div>
-        )
-        }
+      
       
       </div>
       <div className="rides">
