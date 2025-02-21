@@ -4,7 +4,7 @@ import { useState } from 'react';
 import axios from 'axios';
 
 // Base URL for API (use environment variable if needed)
-const API_BASE_URL = "https://prosybackend-a7cvbaadetbccte9.canadacentral-01.azurewebsites.net";
+
 
 const RegisterUser = () => {
   const [Name, setName] = useState<string>("")
