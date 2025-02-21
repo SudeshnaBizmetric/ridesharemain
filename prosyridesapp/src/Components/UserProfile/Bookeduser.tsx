@@ -38,7 +38,7 @@ const Bookeduser = () => {
         };
         const getBookedUserextraInfo = async () => {
             try {
-                const response = await axios.get(`http://localhost:8000/v1/bookeduserextrainfo/${id}`);
+                const response = await axios.get(`https://backendapiapp-hhgecegpgefhd4bc.canadacentral-01.azurewebsites.net/v1/bookeduserextrainfo/${id}`);
                 setBookedUserextraInfo(response.data);
                 console.log("Updated Booked User Info:", response.data);
             } catch (error) {

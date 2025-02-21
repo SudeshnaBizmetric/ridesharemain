@@ -150,7 +150,7 @@ const handlePlaceChange = (
    
     // Make the POST request to the backend
     try {
-      const response = await axios.post('http://127.0.0.1:8000/v1/publishrides', rideData,
+      const response = await axios.post('https://backendapiapp-hhgecegpgefhd4bc.canadacentral-01.azurewebsites.net/v1/publishrides', rideData,
         {
           headers: {
               Authorization: `Bearer ${token}`,

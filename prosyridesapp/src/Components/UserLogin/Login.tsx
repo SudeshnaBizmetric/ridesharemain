@@ -28,7 +28,7 @@ const Login = () => {
     } else {
       try {
         // Make API call to login
-        const response = await axios.post('http://127.0.0.1:8000/v1/login', {
+        const response = await axios.post('https://backendapiapp-hhgecegpgefhd4bc.canadacentral-01.azurewebsites.net/v1/login', {
           E_mail,
           password,
         });

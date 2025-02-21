@@ -62,7 +62,7 @@ const User = () => {
     if (!id) return;
 
     try {
-      const response = await axios.get(`http://localhost:8000/v1/users_extra_info/${id}`);
+      const response = await axios.get(`https://backendapiapp-hhgecegpgefhd4bc.canadacentral-01.azurewebsites.net/v1/users_extra_info/${id}`);
       setUserExtraInfo(response.data);
       if (response.data?.isposted) {
         setIsPosted(true);
@@ -93,7 +93,7 @@ const User = () => {
 
     try {
       const response = await axios.post(
-        `http://localhost:8000/v1/userextrainformation/${userID}`,
+        `https://backendapiapp-hhgecegpgefhd4bc.canadacentral-01.azurewebsites.net/v1/userextrainformation/${userID}`,
         formData,
         {
           headers: {
@@ -127,7 +127,7 @@ const User = () => {
     }).then(async (result) => {
       if (result.isConfirmed) {
         try {
-          const response = await axios.delete(`http://localhost:8000/v1/deleteuser/${id}`);
+          const response = await axios.delete(`https://backendapiapp-hhgecegpgefhd4bc.canadacentral-01.azurewebsites.net/v1/deleteuser/${id}`);
           setUser(response.data); // Update state if needed
   
           Swal.fire("Deleted!", "The user account has been deleted.", "success");

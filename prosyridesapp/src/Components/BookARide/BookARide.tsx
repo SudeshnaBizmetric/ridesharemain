@@ -87,7 +87,7 @@ const BookARide = () => {
 
     try {
       const formattedDate = date ? date.toISOString().split("T")[0] : "";
-      const response = await axios.get("http://localhost:8000/v1/search-rides", {
+      const response = await axios.get("https://backendapiapp-hhgecegpgefhd4bc.canadacentral-01.azurewebsites.net/v1/search-rides", {
         params: { pickup, destination, date: formattedDate, no_of_seats: noOfSeats },
       });
       setRides(response.data)
@@ -141,7 +141,7 @@ const BookARide = () => {
   
     // Fetch the latest seat count before booking
     try {
-      const response = await axios.get(`http://localhost:8000/v1/ride/${rideid}`);
+      const response = await axios.get(`https://backendapiapp-hhgecegpgefhd4bc.canadacentral-01.azurewebsites.net/v1/ride/${rideid}`);
       const updatedSeats = response.data.Seats_Remaining;
   
       if (updatedSeats <= 0) {
@@ -156,7 +156,7 @@ const BookARide = () => {
   
       // Proceed with booking
       const bookingResponse = await axios.post(
-        "http://localhost:8000/v1/bookings_instant",
+        "https://backendapiapp-hhgecegpgefhd4bc.canadacentral-01.azurewebsites.net/v1/bookings_instant",
         {
           UserID,
           RideID: rideid,
@@ -201,7 +201,7 @@ const BookARide = () => {
 
     try {
         const response = await axios.post(
-            "http://localhost:8000/v1/requestrides",
+            "https://backendapiapp-hhgecegpgefhd4bc.canadacentral-01.azurewebsites.net/v1/requestrides",
             {
                 UserID,
                 RideID: rideid,

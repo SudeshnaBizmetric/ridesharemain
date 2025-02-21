@@ -52,12 +52,12 @@ const User_Rides = () => {
     }
 
     try {
-      const response = await axios.get(`http://localhost:8000/v1/publishrides/${UserID}`);
+      const response = await axios.get(`https://backendapiapp-hhgecegpgefhd4bc.canadacentral-01.azurewebsites.net/v1/publishrides/${UserID}`);
       const ridesWithRequests = await Promise.all(
         response.data.map(async (ride: Ride) => {
           try {
             const requestResponse = await axios.get(
-              `http://localhost:8000/v1/ride-requests/${ride.id}`,
+              `https://backendapiapp-hhgecegpgefhd4bc.canadacentral-01.azurewebsites.net/v1/ride-requests/${ride.id}`,
               {
                 headers: { Authorization: `Bearer ${token}` },
               }
@@ -115,7 +115,7 @@ const User_Rides = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:8000/v1/bookings_instant",
+        "https://backendapiapp-hhgecegpgefhd4bc.canadacentral-01.azurewebsites.net/v1/bookings_instant",
         {
           UserID: userId,
           RideID: rideId,
@@ -149,7 +149,7 @@ const User_Rides = () => {
     }).then((result) => {
       if (result.isConfirmed) {
         axios
-          .delete(`http://localhost:8000/v1/deleteride/${id}`, {
+          .delete(`https://backendapiapp-hhgecegpgefhd4bc.canadacentral-01.azurewebsites.net/v1/deleteride/${id}`, {
             headers: { Authorization: `Bearer ${token}` },
           })
           .then(() => {
